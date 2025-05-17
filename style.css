@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Seymour+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(grass.webp);
+    background-position: center;
+    background-size: cover;
+}
+.clock{
+    background-image: url(pexels-photo-971360.webp);
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 12px ridge rgb(203, 122, 240);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    position: relative;
+
+}
+.clock::after{
+    content:" ";
+    width: 15px;
+    height: 15px;
+    background-color: black;
+   border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%,-50%);/*own width and own height */
+
+}
+.clock::before{
+    content: "Sen thomas";
+    font-family: "Almendra", serif;
+    font-weight: 10;
+    font-size: 30px;
+    font-style: italic;
+    top: 10%;
+    left: 38%;
+    color: rgb(45, 5, 47);
+    position: absolute;
+
+}
+
+.number{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    color: azure;
+    text-align: center;
+    font-size: 20px;
+    --rotate:0;
+    transform: rotate(var(--rotate));
+    font-family: "Seymour One", sans-serif;
+}
+.number-1{--rotate:30deg;}
+.number-2{--rotate:60deg;}
+.number-3{--rotate:90deg;}
+.number-4{--rotate:120deg;}
+.number-5{--rotate:150deg;}
+.number-6{--rotate:180deg;}
+.number-7{--rotate:210deg;}
+.number-8{--rotate:240deg;}
+.number-9{--rotate:270deg;}
+.number-10{--rotate:300deg;}
+.number-11{--rotate:330deg;}
+
+.needle{
+    --rotation:0;
+    position: absolute;
+    
+   
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    left: 50%;
+    bottom: 50%;
+    z-index: 0;
+   
+    transform: translatex(-50%) rotate(calc(var(--rotation)*1deg));
+    transform-origin: bottom;
+}
+.hrs{
+    height: 30%;
+    background-color: rgb(203, 109, 220);
+    width: 15px;
+    --rotation:0;
+
+}
+.mins{
+    height: 40%;
+    background-color: rgb(253, 253, 253);
+    width: 10px;
+    --rotation:0;
+
+}
+.sec{
+    height: 45%;
+    background-color: rgb(86, 7, 42);
+    width: 5px;
+    --rotation:0;
+
+}
