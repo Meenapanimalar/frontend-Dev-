@@ -3,30 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analog Clock</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="clock">
-        <div class="needle hrs"></div>
-        <div class="needle mins"></div>
-        <div class="needle sec"></div>
+    <div class="control">
 
-    <div class="number number-1">1</div>
-    <div class="number number-2">2</div>
-    <div class="number number-3">3</div>
-    <div class="number number-4">4</div>
-    <div class="number number-5">5</div>
-    <div class="number number-6">6</div>
-    <div class="number number-7">7</div>
-    <div class="number number-8">8</div>
-    <div class="number number-9">9</div>
-    <div class="number number-10">10</div>
-    <div class="number number-11">11</div>
-    <div class="number number-12">12</div>
-    </div>
+        <div class="btn-grp">
+    <button class="btn"  data-filter="Biriyani"> Biriyani</button>
+    <button class="btn" data-filter="paratha">paratha</button>
+    <button class="btn"  data-filter="icecream">icecream</button>
+    <button class="btn" data-filter="sweets">sweets</button>
+    <button class="btn buttonClicked"  data-filter="All" >All</button>
+</div>
+<input type="text" id="search" placeholder="search here">
+</div>
+<div class="container">
+    <div class="image" data-items="biriyani"><img src="./images/biryani1.jpg" alt=""></div>
+    <div class="image" data-items="biriyani"><img src="./images/biryani2.jpg" alt=""></div>
+    <div class="image" data-items="biriyani"><img src="./images/biryani3.jpg" alt=""></div>
+    <div class="image" data-items="biriyani"><img src="./images/biryani4.jpg" alt=""></div>
+    <div class="image" data-items="sweets"><img src="./images/sweets3.webp" alt=""></div>
+    <div class="image" data-items="icecream"><img src="./images/ice1.webp" alt=""></div>
+    <div class="image" data-items="sweets"><img src="./images/sweets2.jpeg" alt=""></div>
+    <div class="image" data-items="icecream"><img src="./images/ice2.jpg" alt=""></div>
+   
+    <div class="image" data-items="paratha"><img src="./images/paratha.jpg" alt=""></div>
+    <div class="image" data-items="icecream"><img src="./images/ice3.webp" alt=""></div>
+    <div class="image" data-items="sweets"><img src="./images/sweets1.webp" alt=""></div>
+    <div class="image" data-items="icecream"><img src="./images/ice5.jpeg" alt=""></div>
+    <div class="image" data-items="paratha"><img src="./images/paratha1.jpg" alt=""></div>
+    <div class="image" data-items="icecream"><img src="./images/ice4.jpg" alt=""></div>
    
 
-  <script src="script.js"></script>  
+
+</div>
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
 </body>
 </html>
